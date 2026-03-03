@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snake Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="game-container">
+    <header class="game-header">
+      <h1>Snake Game</h1>
+      <div class="score-board">
+        <div class="score">
+          <span class="label">Score</span>
+          <span id="score">0</span>
+        </div>
+        <div class="score">
+          <span class="label">High Score</span>
+          <span id="high-score">0</span>
+        </div>
+      </div>
+    </header>
+
+    <div class="canvas-wrapper">
+      <canvas id="game-canvas"></canvas>
+      <div id="overlay" class="overlay">
+        <div class="overlay-content">
+          <h2 id="overlay-title">Snake Game</h2>
+          <p id="overlay-message">Press SPACE or tap to start</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="controls">
+      <div class="control-group">
+        <label>
+          <input type="checkbox" id="grid-toggle"> Grid
+        </label>
+        <label>
+          <input type="checkbox" id="wrap-toggle"> Wrap Mode
+        </label>
+      </div>
+      <div class="level-display">
+        Level: <span id="level">1</span>
+      </div>
+    </div>
+
+    <div class="mobile-controls">
+      <button class="control-btn" data-direction="up">▲</button>
+      <div class="control-row">
+        <button class="control-btn" data-direction="left">◀</button>
+        <button class="control-btn" data-direction="down">▼</button>
+        <button class="control-btn" data-direction="right">▶</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>

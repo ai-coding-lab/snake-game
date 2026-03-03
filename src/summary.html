@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snake Game - Summary</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #fff;
+      padding: 20px;
+    }
+
+    .summary-container {
+      max-width: 360px;
+      width: 100%;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2rem;
+      color: #4ecca3;
+      text-shadow: 0 0 10px rgba(78, 204, 163, 0.5);
+      margin-bottom: 20px;
+    }
+
+    .icon {
+      margin-bottom: 20px;
+    }
+
+    .icon svg {
+      width: 80px;
+      height: 80px;
+    }
+
+    .description {
+      font-size: 1.1rem;
+      color: #ccc;
+      margin-bottom: 30px;
+      line-height: 1.6;
+    }
+
+    .prompt-section h2 {
+      font-size: 1rem;
+      color: #4ecca3;
+      margin-bottom: 15px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    .prompt-list {
+      list-style: none;
+      text-align: left;
+    }
+
+    .prompt-list li {
+      padding: 12px 15px;
+      background: rgba(78, 204, 163, 0.1);
+      border-left: 3px solid #4ecca3;
+      margin-bottom: 10px;
+      border-radius: 0 8px 8px 0;
+      font-size: 0.95rem;
+      color: #ddd;
+    }
+  </style>
+</head>
+<body>
+  <div class="summary-container">
+    <h1>Snake Game</h1>
+
+    <div class="icon">
+      <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="10" y="40" width="15" height="15" rx="3" fill="#4ecca3"/>
+        <rect x="25" y="40" width="15" height="15" rx="3" fill="#3db892"/>
+        <rect x="40" y="40" width="15" height="15" rx="3" fill="#2ea681"/>
+        <rect x="55" y="40" width="15" height="15" rx="3" fill="#1f9470"/>
+        <rect x="55" y="55" width="15" height="15" rx="3" fill="#10825f"/>
+        <rect x="55" y="70" width="15" height="15" rx="3" fill="#01704e"/>
+        <circle cx="17" cy="45" r="2" fill="#0f0f23"/>
+        <circle cx="17" cy="52" r="2" fill="#0f0f23"/>
+        <circle cx="80" cy="25" r="8" fill="#ff6b6b"/>
+      </svg>
+    </div>
+
+    <p class="description">
+      Canvas と バニラJS で作る<br>クラシックなスネークゲーム
+    </p>
+
+    <div class="prompt-section">
+      <h2>Prompt</h2>
+      <ul class="prompt-list">
+        <li>矢印キーで操作するスネーク</li>
+        <li>エサを食べると伸びる＆スコア加算</li>
+        <li>壁・自分に当たるとゲームオーバー</li>
+        <li>ハイスコアをローカル保存</li>
+        <li>レベルアップで速度上昇</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
